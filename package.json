@@ -1,0 +1,24 @@
+{
+  "name": "japan-area-mesh",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d tiles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirofumikanda/japan-area-mesh.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hirofumikanda/japan-area-mesh/issues"
+  },
+  "homepage": "https://github.com/hirofumikanda/japan-area-mesh",
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
