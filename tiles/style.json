@@ -1,0 +1,118 @@
+{
+  "version": 8,
+  "name": "japan_mesh",
+  "sources": {
+    "japan-area-mesh": {
+      "tiles": [
+        "https://hirofumikanda.github.io/japan-area-mesh/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector",
+      "minzoom": 5,
+      "maxzoom": 12
+    }
+  },
+  "glyphs": "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "third-mesh",
+      "type": "line",
+      "source": "japan-area-mesh",
+      "source-layer": "third_mesh",
+      "minzoom": 12,
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 3.0
+      }
+    },
+    {
+      "id": "third-mesh-label",
+      "type": "symbol",
+      "source": "japan-area-mesh",
+      "source-layer": "third_mesh",
+      "minzoom": 13,
+      "layout": {
+        "text-field": [
+          "concat",
+          ["slice", ["get", "code"], 0, 4],
+          "-",
+          ["slice", ["get", "code"], 4, 6],
+          "-",
+          ["slice", ["get", "code"], 6, 8]
+        ],
+        "text-font": ["Noto Sans Bold"],
+        "text-size": 14,
+        "text-justify": "center"
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 2.0
+      }
+    },
+    {
+      "id": "second-mesh",
+      "type": "line",
+      "source": "japan-area-mesh",
+      "source-layer": "second_mesh",
+      "minzoom": 9,
+      "paint": {
+        "line-color": "#0000ff",
+        "line-width": 3.0
+      }
+    },
+    {
+      "id": "second-mesh-label",
+      "type": "symbol",
+      "source": "japan-area-mesh",
+      "source-layer": "second_mesh",
+      "minzoom": 9,
+      "maxzoom": 12,
+      "layout": {
+        "text-field": [
+          "concat",
+          ["slice", ["get", "code"], 0, 4],
+          "-",
+          ["slice", ["get", "code"], 4, 6]
+        ],
+        "text-font": ["Noto Sans Bold"],
+        "text-size": 14,
+        "text-justify": "center"
+      },
+      "paint": {
+        "text-color": "#0000ff",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 2.0
+      }
+    },
+    {
+      "id": "first-mesh",
+      "type": "line",
+      "source": "japan-area-mesh",
+      "source-layer": "first_mesh",
+      "minzoom": 5,
+      "paint": {
+        "line-color": "#ff0000",
+        "line-width": 3.0
+      }
+    },
+    {
+      "id": "first-mesh-label",
+      "type": "symbol",
+      "source": "japan-area-mesh",
+      "source-layer": "first_mesh",
+      "minzoom": 5,
+      "maxzoom": 9,
+      "layout": {
+        "text-field": "{code}",
+        "text-font": ["Noto Sans Bold"],
+        "text-size": 14,
+        "text-justify": "center"
+      },
+      "paint": {
+        "text-color": "#ff0000",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 2.0
+      }
+    }
+  ]
+}
