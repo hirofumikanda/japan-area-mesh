@@ -31,14 +31,7 @@
       "source-layer": "third_mesh",
       "minzoom": 13,
       "layout": {
-        "text-field": [
-          "concat",
-          ["slice", ["get", "code"], 0, 4],
-          "-",
-          ["slice", ["get", "code"], 4, 6],
-          "-",
-          ["slice", ["get", "code"], 6, 8]
-        ],
+        "text-field": "{code}",
         "text-font": ["Noto Sans Bold"],
         "text-size": 14,
         "text-justify": "center"
@@ -68,12 +61,7 @@
       "minzoom": 9,
       "maxzoom": 12,
       "layout": {
-        "text-field": [
-          "concat",
-          ["slice", ["get", "code"], 0, 4],
-          "-",
-          ["slice", ["get", "code"], 4, 6]
-        ],
+        "text-field": "{code}",
         "text-font": ["Noto Sans Bold"],
         "text-size": 14,
         "text-justify": "center"
