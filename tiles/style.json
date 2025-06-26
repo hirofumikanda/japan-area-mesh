@@ -28,7 +28,7 @@
       "id": "third-mesh-label",
       "type": "symbol",
       "source": "japan-area-mesh",
-      "source-layer": "third_mesh",
+      "source-layer": "third_mesh_labels",
       "minzoom": 13,
       "layout": {
         "text-field": "{code}",
@@ -57,9 +57,9 @@
       "id": "second-mesh-label",
       "type": "symbol",
       "source": "japan-area-mesh",
-      "source-layer": "second_mesh",
+      "source-layer": "second_mesh_labels",
       "minzoom": 9,
-      "maxzoom": 12,
+      "maxzoom": 13,
       "layout": {
         "text-field": "{code}",
         "text-font": ["Noto Sans Bold"],
@@ -87,7 +87,7 @@
       "id": "first-mesh-label",
       "type": "symbol",
       "source": "japan-area-mesh",
-      "source-layer": "first_mesh",
+      "source-layer": "first_mesh_labels",
       "minzoom": 5,
       "maxzoom": 9,
       "layout": {
