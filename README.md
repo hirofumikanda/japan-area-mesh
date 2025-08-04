@@ -29,7 +29,8 @@
 
 - MapLibre GL JSなどのライブラリを使って、tiles/style.jsonを読み込むことができます。
 - また、QGISなどで以下のタイルURLで読み込むことができます。
-  - タイルURL：https://hirofumikanda.github.io/japan-area-mesh/tiles/{z}/{x}/{y}.pbf
+  - タイルURL：https://hirofumikanda.github.io/japan-area-mesh/{z}/{x}/{y}.pbf
+  - style.json：https://hirofumikanda.github.io/japan-area-mesh/style.json
 
 ## 📘 メッシュ仕様
 
